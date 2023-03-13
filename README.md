@@ -27,8 +27,17 @@ Here is an overview of the tools used for the execution of the project
 
 
 # Spark ETL
+This is how the ETL pipeline works
 
+1. Read data from S3
 
+    + `Purchase Events:` s3://retail-events-bkt/purchase_events/
+    
+2. Process data using Spark
 
+   Transforms the data by splitting and creating 2 main analytical tables: `INVOICES` and `ITEMS`
 
-# Conclusion
+3. Load data from analytical tables to S3
+
+   Writes tables to `partitioned parquet files` on S3 directories
+
