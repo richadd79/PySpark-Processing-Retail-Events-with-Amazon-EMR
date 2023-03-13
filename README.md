@@ -1,3 +1,5 @@
+# PySpark Processing Retail Events with Amazon EMR
+
 # Introduction
 An upstart retail company is growing their conversions rapidly and want to move their data to a data lake. 
 Their data resides in S3 directory in json format.
